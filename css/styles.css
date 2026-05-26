@@ -1,0 +1,436 @@
+:root {
+    --menuWidth: 1200px;
+}
+
+body {
+    zoom: 1;
+}
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#title {
+    margin: 10px 0 0 10px;
+    color: var(--color0);
+}
+
+#title h1 {
+    font-size: 26px;
+    padding-bottom: 2px;
+}
+
+#title img {
+    position: static;
+    float: left;
+    width: 36px;
+    height: 36px;
+}
+
+.tab {
+    margin: 0 0 0 15px;
+    padding-left: 10px;
+}
+
+.space {
+    width: 0;
+    height: 0;
+    padding: 3px;
+}
+
+.bigSpace {
+    width: 0;
+    height: 0;
+    padding: 5px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.main-panel .usedCoin {
+    margin-right: 3px
+}
+
+#info .red-letters {
+    font-size: 22px;
+    color: var(--red);
+    font-weight: 500;
+}
+
+.display .age {
+    font-size: 20px;
+    margin-bottom: 2px;
+    margin-top: 0px;
+    color: var(--color0);
+}
+
+.sidebar {
+    padding: 5px 10px 10px 15px;
+    height: fit-content;
+    min-width: var(--sidebarWidth, 320px)
+}
+
+#currentJobsDisplay div span {
+    color: var(--taskTextBackground)
+}
+
+#currentSkillsDisplay div span {
+    color: var(--taskTextBackground)
+}
+
+.sidebar.zoom0 {
+    zoom: 0.6
+}
+
+.menu {
+    margin-bottom: 10px;
+    padding-left: 0;
+    height: fit-content;
+    width: var(--menuWidth);
+    display: inline-flex;
+    box-sizing: content-box;
+}
+
+.all-panels {
+    display: flex;
+    flex: row;
+    justify-content: left;
+    margin-top: 10px;
+}
+
+.main-panel {
+    height: auto;
+    width: var(--menuWidth);
+    padding-left: 0;
+    box-sizing: content-box;
+}
+
+.menuButton {
+    height: inherit;
+    width: 100%;
+    text-align: center;
+    color: var(--color0);
+    font-size: 16px;
+    padding: 8px 0 8px 0;
+    user-select: none;
+}
+
+.menuButton.small {
+    width: 25%;
+}
+
+.menuButton:hover {
+    color: var(--color0);
+    background-color: var(--color2);
+}
+
+#importExportBox {
+    margin-top: -10px
+}
+
+#importExportBox:hover {
+    color: var(--color0);
+    background-color: var(--color4);
+}
+
+.menuButton.currentTab {
+    background-color: var(--color10);
+}
+
+.settingsSubpanel {
+    color: var(--color1);
+    font-size: 16px;
+    text-align: left;
+    padding-bottom: max(2%, 16px);
+    margin-bottom: 10px;
+    padding-left: 0;
+    height: fit-content;
+    width: var(--menuWidth);
+    box-sizing: border-box;
+}
+
+.groupedSettings {
+    display: inline-flex;
+    width: 100%
+}
+
+.setting {
+    padding: 10px;
+    background-color: var(--color6);
+    margin-bottom: 10px;
+}
+
+.subsetting {
+    padding: 10px;
+    background-color: color-mix(in oklab, var(--color6), var(--color7));
+}
+
+.resetSettings {
+    border: 4px solid red;
+}
+
+.resetSettings .subsetting {
+    background-color: #550000;
+    color: var(--taskText)
+}
+
+.resetSettings .subsetting:hover {
+    background-color: #aa0000
+}
+
+.experimentalSettingsButton {
+    margin-bottom: 0px;
+}
+
+.zoom07 {
+    zoom: 0.7
+}
+
+.zoom08 {
+    zoom: 0.8
+}
+
+.zoom09 {
+    zoom: 0.9
+}
+
+.zoom11 {
+    zoom: 1.1
+}
+
+.zoom12 {
+    zoom: 1.2
+}
+
+.zoom13 {
+    zoom: 1.3
+}
+
+#changelog-pre {
+    padding-left: 20px;
+}
+
+.statsText {
+    text-align: center;
+}
+
+#pauseButton {
+    padding: 5px 10px 5px 10px;
+    background-color: var(--color6);
+    color: var(--color0);
+    font-size: 20px;
+    user-select: none;
+    text-align: center;
+    width: 85px;
+    height: 50px
+}
+
+#pauseButton:hover {
+    background-color: var(--color3);
+}
+
+#pauseButton:not(.paused) {
+    border: 4px solid var(--color2);
+}
+
+.toggleButton {
+    padding: 2px 4px 2px 4px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    width: fit-content;
+    height: fit-content;
+    background-color: var(--color6);
+    color: var(--color0);
+    font-size: 16px;
+    user-select: none;
+}
+
+.toggleButton:hover {
+    background-color: var(--color3);
+}
+
+.toggleButton:not(.toggled) {
+    border: 4px solid var(--color2);
+}
+
+.toggleButton.toggled {
+    border: 4px solid var(--toggled);
+}
+
+#autoBuy {
+    margin-left: -25px
+}
+
+.buttonGroup {
+    display: flex;
+    margin: 5px 0 5px 0px;
+}
+
+.verticalButtonGroup {
+    display: flex;
+    flex-direction: column;
+}
+
+.paused {
+    border: 2px solid var(--paused);
+}
+
+.paused#pauseButton {
+    border: 4px solid var(--paused);
+}
+
+.happiness {
+    font-size: 20px;
+    color: var(--happiness);
+    font-weight: 450;
+}
+
+.evil {
+    font-size: 20px;
+    color: var(--evil);
+    font-weight: 450;
+}
+
+.timeSpeed {
+    font-size: 20px;
+    color: var(--timeSpeed);
+    font-weight: 450;
+}
+
+.money {
+    font-size: 20px;
+}
+
+.grayed {
+    margin: 0;
+    color: var(--grayed);
+}
+
+#sidebar .grayed {
+    font-size: 16px
+}
+
+.setting:hover .grayed {
+    color: var(--color4)
+}
+
+.subsubpanel {
+    width: var(--menuWidth);
+    height: fit-content;
+    padding: 10px 8px 10px 0;
+}
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 240px;
+    background-color: var(--color5);
+    color: var(--color0);
+    text-align: center;
+    padding: 5px;
+    border-radius: 6px;
+    line-height: 1.4;
+
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 105%;
+    margin-left: -10px;
+    border: 6px solid var(--color6);
+
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.jobDisplay {
+    width: 90% !important;
+    margin-bottom: 10px;
+    margin-top: 2px
+}
+
+.jobDisplay div {
+    height: 100%
+}
+
+.jobDisplay span {
+    text-align: center;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 500;
+    color: var(--color0)
+}
+
+.skillDisplay {
+    width: 90% !important;
+    margin-bottom: 10px;
+    margin-top: 2px
+}
+
+.skillDisplay div {
+    height: 100%
+}
+
+.skillDisplay span {
+    text-align: center;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 500;
+    color: var(--color0)
+}
+
+.amuletText {
+    color: var(--color0);
+    font-size: 18px;
+    margin: 5px 120px 15px 30px;
+}
+
+.rebirthButton {
+    padding: 8px 16px 8px 16px;
+    margin-top: 10px;
+    width: fit-content;
+    height: fit-content;
+    background-color: var(--color6);
+    color: var(--color0);
+    font-size: 20px;
+    user-select: none;
+    border: 5px solid var(--color1)
+}
+
+.rebirthButton:hover {
+    background-color: var(--color3);
+}
+
+#rebirth2 {
+    background-color: var(--evilBackground);
+    border: 5px solid var(--evilBorder)
+}
+
+#rebirth2:hover {
+    background-color: var(--evilBackgroundHover);
+}
+
+.settingsLink {
+    margin-left: 30px;
+    color: var(--color0)
+}
+
+.settingsLink a {
+    color: var(--color11)
+}
